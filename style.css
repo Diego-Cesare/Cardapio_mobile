@@ -24,7 +24,6 @@ header {
     background: linear-gradient(0deg, rgba(195, 43, 34, 1) 0%, rgba(253, 152, 45, 1) 100%);
     width: 100%;
     position: fixed;
-
 }
 
 .barra__menu {
@@ -32,7 +31,7 @@ header {
     align-items: center;
     justify-content: space-between;
     width: 100%;
-    padding: 1vh;
+    padding: 3vh;
 }
 
 
@@ -51,6 +50,7 @@ nav a {
     text-decoration: none;
     color: #0B192C;
     font-size: 1.9vh;
+    font-weight: 600;
 }
 
 
@@ -64,7 +64,7 @@ nav a {
 }
 
 .social i {
-    font-size: 1.6rem;
+    font-size: 2rem;
     color: #ffffff;
     border-radius: 3px;
 }
@@ -134,7 +134,7 @@ img{
 .valor span {
     background-color: rgba(127, 255, 212, 0.493);
     padding: 10px;
-    font-size: 1.9vh;
+    font-size: 1.6vh;
 }
 
 /*PIZZAS*/
