@@ -1,20 +1,24 @@
 const menuBnt = document.getElementById("abreMenu");
 const menuList = document.getElementById("menuList");
-const cardapio = document.getElementById("cardapio")
 
 menuBnt.addEventListener("click", () => {
     const currentDisplay = window.getComputedStyle(menuList).display;
 
     if (currentDisplay === "none") {
         menuList.style.display = "flex";
-        //cardapio.style.display = "none";
+        setTimeout(() => {
+            menuList.style.transition = "transform 0.5s ease";
+            menuList.style.transform = "translateY(0)";
+        }, 10);
     } else {
-        menuList.style.display = "none";
-        //cardapio.style.display = "block";
+        menuList.style.transition = "transform 0.5s ease";
+        menuList.style.transform = "translateY(-130px)";
+        setTimeout(() => {
+            menuList.style.display = "none";
+        }, 500);
     }
 });
 
 function closeMenu() {
     menuList.style.display = "none";
-    //cardapio.style.display = "block";
 }
