@@ -158,6 +158,12 @@ img {
     font-size: 1.6vh;
 }
 
+.valor .off{
+    background-color: rgba(255, 127, 191, 0.493);
+    padding: 10px;
+    font-size: 1.6vh;
+}
+
 /*PIZZAS*/
 .pizzas span {
     font-size: 2rem;
