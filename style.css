@@ -41,6 +41,7 @@ nav {
     display: none;
     align-items: center;
     justify-content: space-around;
+    background-color: #0B192C;
     width: 100%;
     padding: 15px 10px;
     transform: translateY(-130px);
@@ -104,7 +105,7 @@ img {
 
 .popular__item h2 {
     font-size: 2rem;
-    background: linear-gradient(45deg, #00E3CC, #ff0000, #009688, #44E3D3);
+    background: linear-gradient(45deg, #00E3CC, #00ffb3, #a7fff6, #44E3D3);
     background-size: 400% 100%;
     animation: degrade 10s linear infinite alternate;
     -webkit-background-clip: text;
@@ -118,7 +119,6 @@ img {
 }
 
 .item {
-    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
     border-radius: 10px;
     padding: 10px;
     margin: 30px 10px;
@@ -158,7 +158,7 @@ img {
     font-size: 1.6vh;
 }
 
-.valor .off{
+.valor .off {
     background-color: rgba(255, 127, 191, 0.493);
     padding: 10px;
     font-size: 1.6vh;
@@ -188,6 +188,37 @@ img {
     font-weight: 600;
     font-size: 2rem;
     margin-left: 10px;
+}
+
+/* Tema claro */
+@media (prefers-color-scheme: light) {
+    body {
+        background-color: #ffffff;
+    }
+
+    .item {
+        box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+    }
+}
+
+/* Tema escuro */
+@media (prefers-color-scheme: dark) {
+    body {
+        background-color: #050810;
+    }
+
+    .valor span {
+        background-color: rgba(127, 182, 255, 0.8);
+    }
+
+    .sobre p, .valor span {
+        color: #ffffff;
+    }
+
+    .item {
+        box-shadow: rgba(255, 255, 255, 0.3) 0px 1px 2px 0px, rgba(255, 255, 255, 0.15) 0px 1px 3px 1px;
+    }
+
 }
 
 @keyframes degrade {
