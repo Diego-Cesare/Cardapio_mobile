@@ -78,6 +78,7 @@ img{
     width: 210px;
 }
 
+
 .popular__item {
     display: flex;
     align-items: center;
@@ -140,6 +141,7 @@ img{
     color: rgb(45, 204, 253);
     font-weight: 600;
     font-size: 2rem;
+    margin-left: 10px;
 }
 
 /*PORÇÔES*/
@@ -147,4 +149,5 @@ img{
     color: rgb(253, 104, 45);
     font-weight: 600;
     font-size: 2rem;
+    margin-left: 10px;
 }
